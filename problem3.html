@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>program 2</title>
+    <script>
+        function myFunction(){
+       var end=document.getElementById("end").value;
+       var numbers = "list Of Numbers:<br>";
+       for(i = 1; i <=end ; i++){
+            if(i % 2 !== 0){
+              numbers += i + "<br>"; 
+            }
+        }
+    document.getElementById("result").innerHTML = numbers;
+    }
+    </script>
+</head> 
+<body>
+        <label>Enter your Number:</label>
+        <input type="number" min="1" id="end" value="10" />
+        <input type="button" onclick="myFunction()" value="print Numbers"/>
+  
+  <p id="result"></p>
+</body>
+</html>
